@@ -4,6 +4,7 @@ Maintainer: Jose Luis Rivero <jrivero@osrfoundation.org>
 Section: science
 Priority: extra
 Build-Depends: cmake,
+               cppzmq-dev,
                pkg-config,
                debhelper (>= 11),
                doxygen,
@@ -26,6 +27,7 @@ Package: libignition-transport8-core-dev
 Architecture: any
 Section: libdevel
 Depends: libignition-transport8 (= ${binary:Version}),
+         cppzmq-dev,
          uuid-dev,
          libzmq3-dev (>= 3.0.0),
          libignition-msgs5-dev,
